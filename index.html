@@ -241,6 +241,7 @@ footer{border-top:1px solid var(--line);margin-top:10px}
       <button class="tab-btn" onclick="showTab('related', this)" role="tab" aria-selected="false">Related Work</button>
       <button class="tab-btn" onclick="showTab('artifact2', this)" role="tab" aria-selected="false">Artifact 02</button>
        <button class="tab-btn" onclick="showTab('artifact3', this)" role="tab" aria-selected="false">Artifact 03</button>
+      <button class="tab-button" onclick="showTab('artifact4', this)" role="tab" aria-selected="false">Artifact 04</button>
     </nav>
   </div>
 </div>
@@ -492,6 +493,69 @@ footer{border-top:1px solid var(--line);margin-top:10px}
           <div class="flabel">Value Proposition</div>
           <div class="fbody">
             <p>This artifact showcases two critical skills required in modern software development: a foundational understanding of how algorithms learn from data, and the ability to seamlessly integrate AI tools into the technical workflow to accelerate problem-solving, clarify complex architectures, and drive continuous learning.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="artifact4" class="tab-panel">
+  <div class="container">
+    <span class="eyebrow">Artifact 04</span>
+    <h1 class="sub-title">LLM-Powered Document Extraction</h1>
+    <p class="sec-lede">An end-to-end machine learning pipeline designed to parse, classify, and extract structured data from highly unstructured, multi-format enterprise PDFs.</p>
+
+    <div class="artifact-shell">
+      <div class="artifact-body">
+        <h3>Automated Key-Value Extraction Pipeline</h3>
+        <p class="artifact-sub">Independent Project · Fall 2026 · AI/ML Engineering</p>
+
+        <div class="field">
+          <div class="flabel">Objective</div>
+          <div class="fbody">
+            <p>To automate the extraction of key-value pairs from complex, unstructured financial documents, eliminating the need for manual data entry and bypassing the brittleness of traditional regex-based scripts.</p>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="flabel">Description</div>
+          <div class="fbody">
+            <p>This artifact represents a complete extraction pipeline that leverages state-of-the-art Large Language Models to interpret document context. By combining computer vision with modern NLP, the system dynamically adapts to unseen layouts and variations in enterprise data.</p>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="flabel">Process</div>
+          <div class="fbody">
+            <ul>
+              <li>Implemented a Vision-Encoder (LayoutLMv3) for accurate spatial layout and bounding box detection across varied PDF templates.</li>
+              <li>Integrated a fine-tuned LLaMA-based extraction chain via LangChain for context-aware interpretation of extracted text.</li>
+              <li>Engineered a robust backend using Tesseract OCR and deployed the inference pipeline via FastAPI to serve asynchronous requests.</li>
+              <li>Evaluated model performance against baseline metrics, achieving a 94% F1-score on out-of-sample data formats and reducing processing time by 85%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="flabel">Tools &amp; Tech</div>
+          <div class="fbody">
+            <div class="tool-tags">
+              <span class="chip">Python</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">HuggingFace</span>
+              <span class="chip">LangChain</span>
+              <span class="chip">LayoutLMv3</span>
+              <span class="chip">FastAPI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="flabel">Value Proposition</div>
+          <div class="fbody">
+            <p>This artifact demonstrates the ability to solve real-world operational bottlenecks by unifying computer vision and natural language processing. It highlights a core competency in architecting resilient, scalable AI systems that outperform fragile, rules-based legacy software.</p>
           </div>
         </div>
 
