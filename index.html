@@ -500,72 +500,53 @@ footer{border-top:1px solid var(--line);margin-top:10px}
     </div>
   </div>
 </section>
-
 <section id="artifact4" class="tab-panel">
   <div class="container">
     <span class="eyebrow">Artifact 04</span>
-    <h1 class="sub-title">LLM-Powered Document Extraction</h1>
-    <p class="sec-lede">An end-to-end machine learning pipeline designed to parse, classify, and extract structured data from highly unstructured, multi-format enterprise PDFs.</p>
+    <h1 class="sub-title">Healthcare AI: Personal Value & Strategies</h1>
+    <p class="sec-lede">A strategic framework for embedding fairness, transparency, and bias mitigation into the development lifecycle of healthcare AI systems.</p>
 
     <div class="artifact-shell">
       <div class="artifact-body">
-        <h3>Automated Key-Value Extraction Pipeline</h3>
-        <!-- IMPORTANT: Update the course name below to match your actual coursework -->
-        <p class="artifact-sub">AIML-550 Coursework · Summer 2026 · AI/ML Engineering</p>
+        <h3>Mitigating Algorithmic Bias in Patient Care</h3>
+        <p class="artifact-sub">Coursework · Healthcare AI Software Development</p>
 
         <div class="field">
-          <div class="flabel">Objective</div>
+          <div class="flabel">Personal Value Statement</div>
           <div class="fbody">
-            <p>To automate the extraction of key-value pairs from complex, unstructured financial documents, eliminating the need for manual data entry and bypassing the brittleness of traditional regex-based scripts.</p>
+            <p>As a healthcare software developer building AI systems that touch patient care, I recognize that the data pipelines, algorithms, and design decisions I make every day carry real consequences for real people. Bias embedded in code is not abstract — it can influence which patients get flagged for follow-up, which diagnoses get surfaced to clinicians, and whose data gets adequately represented in training sets. My core value is to treat fairness and transparency as engineering requirements, not afterthoughts. Every system I ship should be as accountable to the patient population it serves as it is to the technical specifications it meets.</p>
           </div>
         </div>
 
         <div class="field">
-          <div class="flabel">Description</div>
+          <div class="flabel">Field Strategies</div>
           <div class="fbody">
-            <p>This artifact represents a complete extraction pipeline that leverages state-of-the-art Large Language Models to interpret document context. By combining computer vision with modern NLP, the system dynamically adapts to unseen layouts and variations in enterprise data.</p>
+            <ol style="color: #cccccc; line-height: 1.6; padding-left: 20px;">
+              <li style="margin-bottom: 10px;"><strong>Build Bias Checks into the Development Lifecycle:</strong> Just as security scans run before deployment, bias audits should be a structured gate in the CI/CD pipeline. This means evaluating outputs across demographic subgroups (age, race, insurance status) using tools like IBM AI Fairness 360 to verify the model isn't systematically under-performing.</li>
+              <li style="margin-bottom: 10px;"><strong>Prioritize Representativeness in Training Data:</strong> Before training goes live, source data should be audited for representation gaps, implementing supplemental data collection or reweighting strategies that reflect the actual patient population being served.</li>
+              <li style="margin-bottom: 10px;"><strong>Design for Transparency with Clinical Stakeholders:</strong> Applying explainability principles—flagging confidence scores, surfacing driving data fields—helps clinical reviewers catch cases where the model may reflect a bias rather than a genuine clinical signal.</li>
+              <li style="margin-bottom: 10px;"><strong>Foster Cross-Disciplinary Review:</strong> Actively involving physicians, data scientists, patient advocates, and compliance teams in design reviews creates diverse perspective coverage. Cross-functional review at key project milestones should be a standard expectation.</li>
+              <li style="margin-bottom: 10px;"><strong>Create Feedback Loops from the Field:</strong> Building a simple feedback mechanism into the interface turns end users into bias detectors, keeping the system improving over time after deployment.</li>
+            </ol>
           </div>
         </div>
 
         <div class="field">
-          <div class="flabel">Process</div>
-          <div class="fbody">
-            <ul>
-              <li>Implemented a Vision-Encoder (LayoutLMv3) for accurate spatial layout and bounding box detection across varied PDF templates.</li>
-              <li>Integrated a fine-tuned LLaMA-based extraction chain via LangChain for context-aware interpretation of extracted text.</li>
-              <li>Engineered a robust backend using Tesseract OCR and deployed the inference pipeline via FastAPI to serve asynchronous requests.</li>
-              <li>Evaluated model performance against baseline metrics, achieving a 94% F1-score on out-of-sample data formats and reducing processing time by 85%.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="field">
-          <div class="flabel">Tools &amp; Tech</div>
+          <div class="flabel">Focus Areas</div>
           <div class="fbody">
             <div class="tool-tags">
-              <span class="chip">Python</span>
-              <span class="chip">PyTorch</span>
-              <span class="chip">LangChain</span>
-              <span class="chip">LayoutLMv3</span>
-              <span class="chip">FastAPI</span>
+              <span class="chip">AI Fairness</span>
+              <span class="chip">CI/CD Bias Audits</span>
+              <span class="chip">Cross-Disciplinary Review</span>
+              <span class="chip">Algorithmic Transparency</span>
             </div>
           </div>
         </div>
 
         <div class="field">
-          <div class="flabel">Value Proposition</div>
+          <div class="flabel">AI Disclosure</div>
           <div class="fbody">
-            <p>This artifact demonstrates the ability to solve real-world operational bottlenecks by unifying computer vision and natural language processing. It highlights a core competency in architecting resilient, scalable AI systems that outperform fragile, rules-based legacy software.</p>
-          </div>
-        </div>
-
-        <!-- NEW REFLECTION SECTION TO HIT THE 10-POINT RUBRIC -->
-        <div class="field">
-          <div class="flabel">Reflection</div>
-          <div class="fbody">
-            <p><strong>Audience Customization:</strong> I designed the documentation and output of this project to be accessible to two distinct audiences. The backend architecture is rigorously documented for technical peers, while the frontend dashboard and value proposition are tailored for business stakeholders, focusing on ROI and time saved rather than model weights.</p>
-            <p><strong>Lessons Learned:</strong> Building this pipeline deepened my understanding of the limitations of relying solely on LLMs for spatial tasks. I learned that combining a vision-encoder (for bounding boxes) with an LLM (for semantic understanding) creates a much more robust system than either approach alone.</p>
-            <p><strong>Feedback & Revisions:</strong> During peer review, I received feedback that the initial pipeline was too slow for real-time document processing due to the size of the base LLM. In response, I applied this feedback by swapping the heavy model for a smaller, fine-tuned LLaMA variant and implementing asynchronous processing via FastAPI. This revision reduced inference time by 40% without sacrificing accuracy.</p>
+            <p><em>This content was drafted collaboratively with generative AI (Claude by Anthropic) using iterative prompting focused on my role in healthcare AI development. I reviewed, edited, and take full responsibility for the content submitted.</em></p>
           </div>
         </div>
 
@@ -573,6 +554,8 @@ footer{border-top:1px solid var(--line);margin-top:10px}
     </div>
   </div>
 </section>
+
+ 
 <footer>
   <div class="container">
     <div class="foot-links">
